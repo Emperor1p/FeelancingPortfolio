@@ -1,0 +1,205 @@
+/* ----- Fonts ----- */
+@font-face {
+	font-family: 'Work Sans';
+	src: url('./assets/fonts/WorkSans-VariableFont_wght.ttf'),
+		url('./assets/fonts/WorkSans-Italic-VariableFont_wght.ttf'),
+		url('./assets/fonts/static/WorkSans-Bold.ttf'),
+		url('./assets/fonts/static/WorkSans-Regular.ttf'),
+		url('./assets/fonts/static/WorkSans-SemiBold.ttf');
+}
+
+/* ----- Variables ----- */
+:root {
+	/* colors */
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-light-pink: hsl(275, 100%, 97%);
+	--clr-grayish-purple: hsl(292, 16%, 49%);
+	--clr-dark-purple: hsl(292, 42%, 14%);
+	--clr-pink: hsl(281, 83%, 54%);
+}
+
+/* ----- Reset ----- */
+
+/* Remove Default Spacing */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+	font-family: 'Work Sans', sans-serif;
+}
+
+body,
+main {
+	min-height: 100vh;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	display: block;
+}
+
+/* ----- Application Styles (Mobile) ----- */
+main {
+	padding: 1.5rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('./assets/images/background-pattern-mobile.svg');
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-color: var(--clr-light-pink);
+}
+
+.card {
+	padding: 1.5rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 1.5rem;
+	background-color: var(--clr-white);	
+	border-radius: 0.5rem;
+}
+
+.card-header {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.card-header img {
+	height: 24px;
+	width: 24px;
+}
+
+.card-header h1 {
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--clr-dark-purple);
+}
+
+/* Details & Summary */
+.faq-content {
+	width: 100%;
+}
+
+details {
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+}
+
+details:first-child {
+	padding-top: 0;
+}
+
+details:last-child {
+	padding-bottom: 0;
+}
+
+details:not(:last-child) {
+	border-bottom: 1px solid var(--clr-light-pink);
+}
+
+details summary {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+details summary::marker {
+	display: none;
+	content: '';
+}
+
+details summary h2 {
+	max-width: 225px;
+	font-size: 1rem;
+	font-weight: 600;
+	color: var(--clr-dark-purple);
+	transition: color 300ms ease-in-out;
+}
+
+details summary h2:hover,
+details summary h2:focus {
+	color: var(--clr-pink);
+}
+
+details summary > span {
+	height: 30px;
+	width: 30px;
+	background-image: url('./assets/images/icon-plus.svg');
+}
+
+details[open] summary > span {
+	height: 30px;
+	width: 30px;
+	background-image: url('./assets/images/icon-minus.svg');
+}
+
+details p {
+	margin-top: 1.5rem;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 150%;
+	color: var(--clr-grayish-purple);
+}
+
+/* ----- Media Queries ----- */
+
+@media (min-width: 768px) {
+	main {
+		background-image: url('./assets/images/background-pattern-desktop.svg');
+	}
+
+	.card {
+		max-width: 600px;
+		padding: 2.5rem;
+		gap: 2rem;
+		border-radius: 1rem;
+	}
+
+	.card-header img {
+		height: 40px;
+		width: 40px;
+	}
+	
+
+	.card-header h1 {
+		font-size: 2.5rem;
+	}
+
+	/* Details & Summary */
+	details {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+	details summary h2 {
+		max-width: unset;
+		font-size: 1.125rem;
+	}
+
+	details p {
+		margin-top: 1.5rem;
+		font-size: 1rem;
+	}
+}
+
+.collect{
+	font-size: smaller;
+}

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="boxicons/css/boxicons.min.css" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <style>
+    .card {
+      background: var(--clr-dark-purple); /* Softer violet to blue gradient */
+      color: #f0f0f0; /* Light gray for softer text contrast */
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-title {
+      color: #ffffff; /* Bright white for card titles */
+      font-weight: bold;
+    }
+
+    .card-text {
+      color: #f0f0f0; /* Soft gray for card text */
+    }
+  </style>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <div class="container-fluid">
+      <div
+        class="container mt-2 d-flex flex-column flex-md-row justify-content-between"
+        style="color: rgb(44, 73, 100)"
+      >
+        <!-- Contact Info -->
+        <div>
+          <i class="bx bx-envelope">
+            <a
+              href="mailto"
+              class="text-decoration-none emai"
+              style="font-size: 18px"
+              >adewalep097@gmail.com</a
+            >
+          </i>
+          <i class="bx bx-mobile-alt ms-4"></i> +2348051730626
+        </div>
+
+        <!-- Social Icons - Hidden on large and medium screens -->
+        <div class="d-block d-sm-block d-md-none mt-2">
+          <i class="fab fa-twitter me-3"></i>
+          <i class="fab fa-facebook me-3"></i>
+          <i class="fab fa-instagram me-3"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+
+        <!-- Social Icons - Visible on large and medium screens in the same row -->
+        <div class="d-none d-md-block">
+          <i class="fab fa-twitter me-3"></i>
+          <i class="fab fa-facebook me-3"></i>
+          <i class="fab fa-instagram me-3"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg outline- pos mt-2" id="nat">
+        <div class="container">
+          <h2>
+            <a
+              class="navbar-brand text-dark"
+              href="#"
+              style="font-size: 30px; color: rgb(44, 73, 100)"
+              >EmperorHub</a
+            >
+          </h2>
+  
+          <button
+            class="btn btn-primary rounded-pill px-4 order-2 order-lg-3"
+            type="button"
+            id="appoint"
+          >
+            <span class="d-md-inline-block d-none">Make an</span> Appointment
+          </button>
+  
+          <button
+            class="navbar-toggler navbar-custom-toggler order-3 order-lg-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse me-5" id="collapsibleNavbar">
+            <ul class="navbar-nav navsec ms-auto">
+              
+  
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="home.html">Main menu</a>
+              </li>
+  
+              
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#testimonials"
+                  >Testimonials</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Etsy Services Section -->
+    <section class="container mt-5 mb-5">
+      <h2 class="display-4 font-weight-bold text-dark text-center">
+        Etsy Services
+      </h2>
+      <p class="lead text-muted text-center mb-5">
+        Empowering your Etsy store for maximum visibility and sales success.
+      </p>
+      <div class="row">
+        <!-- Service 1: Store Creation -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/doctors/doctors-1.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Etsy Store Creation"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="color: white">Store Creation</h5>
+              <p class="card-text">
+                I will set up a professional Etsy store from scratch, tailored
+                to your brand identity.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 2: Digital Product Creation -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/doctors/doctors-2.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Digital Product Creation"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="color: white">
+                Digital Product Creation
+              </h5>
+              <p class="card-text">
+                Get unique and high-quality digital products designed to attract
+                your target audience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 3: Tag and Description Optimization -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/doctors/doctors-3.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="SEO Optimization"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="color: white">
+                Tag & Description Optimization
+              </h5>
+              <p class="card-text">
+                Enhance your product visibility with SEO-friendly tags and
+                compelling descriptions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 4: Product Listing -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/doctors/doctors-4.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Product Listing"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="color: white">Product Listing</h5>
+              <p class="card-text">
+                I will create and manage your product listings to showcase your
+                items effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 5: Virtual Assistant -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/gallery/gallery-2.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Virtual Assistant"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="color: white">Virtual Assistant</h5>
+              <p class="card-text">
+                Offering dedicated support to handle your daily Etsy store
+                operations efficiently.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/testimonials/testimonials-1.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Virtual Assistant"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="color: white">Virtual Assistant</h5>
+              <p class="card-text">
+                Offering dedicated support to handle your daily Etsy store
+                operations efficiently.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more services as needed -->
+      </div>
+      <!-- Call to Action -->
+      
+      <div class="text-center mt-5">
+        <h5 class="font-weight-bold" style="color: black">
+          Ready to Boost Your Etsy Store?
+        </h5>
+        
+        <p class="text-muted">
+          Contact me today to discuss how we can take your Etsy business to the
+          next level!
+        </p>
+        <div id="testimonials" ></div>
+        <a href="mailto:your-email@example.com" class="btn " id="appoint"
+          >Get in Touch</a
+        >
+      </div>
+      
+    </section>
+
+
+    <!--TESTIMONIALS-->
+    <section class="container mt-5">
+        <h2>What My Clients Are Saying</h2>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 mb-4">
+              <div class="d-flex align-items-center mb-2">
+                <img
+                  src="Peter.jpg"
+                  alt="Client Photo"
+                  class="rounded-circle me-3"
+                  id="testimonials"
+                  style="width: 50px; height: 50px"
+                />
+                <div>
+                  <p class="mb-0">John Doe</p>
+                  <small class="text-muted">Etsy Client</small>
+                  <div class="star-rating">★★★★★</div>
+                </div>
+              </div>
+              <p>
+                Adewale delivered beyond my expectations. He was prompt,
+                professional, and the quality of his work was exceptional!
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 mb-4">
+              <div class="d-flex align-items-center mb-2">
+                <img
+                  src="testimonials-5.jpg"
+                  alt="Client Photo"
+                  id="testimonials"
+                  class="rounded-circle me-3"
+                  style="width: 50px; height: 50px"
+                />
+                <div>
+                  <p class="mb-0">Jane Smith</p>
+                  <small class="text-muted">E-commerce Client</small>
+                  <div class="star-rating">★★★★★</div>
+                </div>
+              </div>
+              <p>
+                Adewale's professionalism and attention to detail made a
+                significant difference in my project. Highly recommend!
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 mb-4">
+              <div class="d-flex align-items-center mb-2">
+                <img
+                  src="testimonials-4.jpg"
+                  alt="Client Photo"
+                  class="rounded-circle me-3"
+                  style="width: 50px; height: 50px"
+                  id="testimonials"
+                />
+                <div>
+                  <p class="mb-0">Michael Brown</p>
+                  <small class="text-muted">Etsy Client</small>
+                  <div class="star-rating">★★★★★</div>
+                </div>
+              </div>
+              <p>
+                Working with Adewale was a fantastic experience. He exceeded my
+                expectations at every turn!
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 mb-4">
+              <div class="d-flex align-items-center mb-2">
+                <img
+                  src="testimonials-1.jpg"
+                  alt="Client Photo"
+                  class="rounded-circle me-3"
+                  id="testimonials"
+                  style="width: 50px; height: 50px"
+                />
+                <div>
+                  <p class="mb-0">Sarah Johnson</p>
+                  <small class="text-muted">Product Research Client</small>
+                  <div class="star-rating">★★★★★</div>
+                </div>
+              </div>
+              <p>
+                Adewale's work is simply outstanding! His insights and creativity
+                brought my ideas to life.
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 mb-4">
+              <div class="d-flex align-items-center mb-2">
+                <img
+                  src="testimonials-2.jpg"
+                  alt="Client Photo"
+                  class="rounded-circle me-3"
+                  style="width: 50px; height: 50px"
+                />
+                <div>
+                  <p class="mb-0">Emily Davis</p>
+                  <small class="text-muted">Etsy Client</small>
+                  <div class="star-rating">★★★★★</div>
+                </div>
+              </div>
+              <p>
+                Adewale's dedication and expertise have made a real difference in
+                my business. I can't thank him enough!
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+              <div class="card shadow-sm p-3 mb-4">
+                <div class="d-flex align-items-center mb-2">
+                  <img
+                    src="testimonials-2.jpg"
+                    alt="Client Photo"
+                    class="rounded-circle me-3"
+                    style="width: 50px; height: 50px"
+                  />
+                  <div>
+                    <p class="mb-0">Emily Davis</p>
+                    <small class="text-muted">virtual-assistant Client</small>
+                    <div class="star-rating">★★★★★</div>
+                  </div>
+                </div>
+                <p>
+                  Adewale's dedication and expertise have made a real difference in
+                  my business. I can't thank him enough!
+                </p>
+              </div>
+            </div>
+            <div id="contact"></div>
+        </div>
+      </section>
+  
+<!--CONTACT US-->
+
+      <section  class="container mt-5">
+          <h2>Contact Me</h2>
+          <form class="row g-3 mt-4" id="contact-form">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn " id="appoint">Send Message</button>
+            </div>
+          </form>
+        </section>
+
+    <footer>
+      <div class="container card-social-profile">
+        <figure>
+          <img src="Peter.jpg" class="avatar-profile" alt="avatar-emperor" />
+        </figure>
+
+        <h3>Emperor</h3>
+        <h5 style="color: #f0f0f0;">Oyo state, Nigeria</h5>
+        <p style="color: white">
+          Front-end developer, Ghostwriter and e-commerce Expert
+        </p>
+
+        <div class="card-social-links">
+          <div class="social-card">
+            <a class="social-items" href="https://zeep.ly/jrFgO" target="_blank"
+              >Upwork</a
+            >
+          </div>
+          <div class="social-card">
+            <a class="social-items" href="https://zeep.ly/NeVKK" target="_blank"
+              >Fiverr</a
+            >
+          </div>
+          <div class="social-card">
+            <a class="social-items" href="https://zeep.ly/PfVpN" target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+
+          <div class="social-card">
+            <a
+              class="social-items"
+              href="https://www.instagram.com/ayoolapeteradewale/"
+              target="_blank"
+              >Instagram</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="home.js"></script>
+
+    <!-- Include Bootstrap JS and dependencies (Optional for interactive components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

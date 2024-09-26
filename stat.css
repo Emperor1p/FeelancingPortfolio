@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --VerydarkblueMainbackground: hsl(233, 47%, 7%);
+    --DarkdesaturatedblueCardbackground: hsl(244, 38%, 16%);
+    --SoftvioletAccent: hsl(277, 64%, 61%);
+    --SoftvioletAccentOverlay: hsla(277, 64%, 61%, 0.5);
+    --WhiteMainHeadingStats: hsl(0, 0%, 100%);
+    --SlightlytransparentWhitemainparagraph: hsla(0, 0%, 100%, 0.75);
+    --SlightlytransparentWhitestatheadings: hsla(0, 0%, 100%, 0.6);
+}
+
+/* Info section styling */
+div.info-div {
+    background-color: var(--clr-dark-purple);
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    color: var(--WhiteMainHeadingStats);
+    margin-bottom: 20px;
+}
+
+h1 > a {
+    text-decoration: none;
+    color: var(--SoftvioletAccent);
+    cursor: default;
+}
+
+p.main-info {
+    color: var(--SlightlytransparentWhitemainparagraph);
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+/* Stats styling */
+div.stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+p.stat-p > a {
+    color: var(--WhiteMainHeadingStats);
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
+    display: block;
+}
+
+p.stat-p {
+    color: var(--SlightlytransparentWhitestatheadings);
+}
+
+/* Image container styling */
+div#container-img {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0 15px 15px 0;
+}
+
+div#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0 15px 15px 0;
+    background-color: var(--SoftvioletAccentOverlay);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    div.info-div {
+        padding: 30px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p.main-info {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+
+    div.stats {
+        justify-content: space-around;
+    }
+
+    div#container-img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    img {
+        border-radius: 15px;
+    }
+}
+
+/* @media (max-width: 576px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    p.main-info {
+        font-size: 0.8em;
+    }
+
+    div#container-img {
+        height: auto;
+    }
+
+    img {
+        max-width: 100%;
+    }
+} */

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="rate.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="boxicons/css/boxicons.min.css" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .card {
+        background: var(--clr-dark-purple);
+        color: #f0f0f0;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+      }
+      .card-title {
+        color: #ffffff;
+        font-weight: bold;
+      }
+      .card-text {
+        color: #f0f0f0;
+      }
+      #contact .form-control {
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <div class="container-fluid">
+      <div
+        class="container mt-2 d-flex flex-column flex-md-row justify-content-between"
+        style="color: rgb(44, 73, 100)"
+      >
+        <!-- Contact Info -->
+        <div>
+          <i class="bx bx-envelope">
+            <a
+              href="mailto:adewalep097@gmail.com"
+              class="text-decoration-none"
+              style="font-size: 18px"
+              >adewalep097@gmail.com</a
+            >
+          </i>
+          <i class="bx bx-mobile-alt ms-4"></i> +2348051730626
+        </div>
+        <!-- Social Icons -->
+        <div>
+          <i class="fab fa-twitter me-3"></i>
+          <i class="fab fa-facebook me-3"></i>
+          <i class="fab fa-instagram me-3"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg outline- pos mt-2" id="nat">
+      <div class="container">
+        <h2>
+          <a
+            class="navbar-brand text-dark"
+            href="#"
+            style="font-size: 30px; color: rgb(44, 73, 100)"
+            >EmperorHub</a
+          >
+        </h2>
+
+        <button
+          class="btn btn-primary rounded-pill px-4 order-2 order-lg-3"
+          type="button"
+          id="appoint"
+        >
+          <span class="d-md-inline-block d-none">Make an</span> Appointment
+        </button>
+
+        <button
+          class="navbar-toggler navbar-custom-toggler order-3 order-lg-1"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse me-5" id="collapsibleNavbar">
+          <ul class="navbar-nav navsec ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="home.html">Main menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#testimonials"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section id="services" class="container mt-5 mb-5">
+      <h2 class="display-4 font-weight-bold text-dark text-center">
+        Ghostwriting Services
+      </h2>
+      <p class="lead text-muted text-center mb-5">
+        Crafting stories that resonate and inspire.
+      </p>
+      <div class="row">
+        <!-- Service 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/doctors/doctors-3.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Ghostwriting for Novels"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Novel Writing</h5>
+              <p class="card-text">
+                Transforming your ideas into captivating novels that engage
+                readers from start to finish.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/testimonials/testimonials-3.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Content Creation"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Content Creation</h5>
+              <p class="card-text">
+                Providing high-quality content for blogs, websites, and social
+                media that drives traffic and engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="Peter.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="E-books"
+            />
+            <div class="card-body">
+              <h5 class="card-title">E-books</h5>
+              <p class="card-text">
+                Writing compelling e-books that inform, entertain, and provide
+                value to your audience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="emperor.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Blog Writing"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Blog Writing</h5>
+              <p class="card-text">
+                Crafting engaging blog posts tailored to your audience,
+                enhancing your online presence.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/doctors/doctors-1.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Non-Fiction Writing"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Non-Fiction Writing</h5>
+              <p class="card-text">
+                Developing insightful non-fiction works that educate and inform
+                readers on various topics.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/testimonials/testimonials-5.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Scripts and Screenplays"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Scripts & Screenplays</h5>
+              <p class="card-text">
+                Writing scripts and screenplays that bring your ideas to life
+                for film or television.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 7 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/doctors/doctors-2.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Business Writing"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Business Writing</h5>
+              <p class="card-text">
+                Creating professional documents, proposals, and reports that
+                convey your business message effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 8 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/testimonials/testimonials-3.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Memoirs"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Memoirs</h5>
+              <p class="card-text">
+                Helping you tell your life story in a compelling memoir that
+                captures your unique journey.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 9 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/doctors/doctors-4.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Academic Writing"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Academic Writing</h5>
+              <p class="card-text">
+                Providing scholarly writing services for research papers,
+                theses, and dissertations.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 10 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/doctors/doctors-2.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Marketing Copy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Marketing Copy</h5>
+              <p class="card-text">
+                Crafting persuasive marketing materials that drive conversions
+                and promote your brand.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 11 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/testimonials/testimonials-4.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Social Media Content"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Social Media Content</h5>
+              <p class="card-text">
+                Creating engaging social media posts that connect with your
+                audience and enhance brand visibility.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 12 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/doctors/doctors-1.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Technical Writing"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Technical Writing</h5>
+              <p class="card-text">
+                Developing clear and concise technical documents, manuals, and
+                guides that enhance user understanding.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 13 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="Peter.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Product Descriptions"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product Descriptions</h5>
+              <p class="card-text">
+                Writing persuasive product descriptions that highlight features
+                and benefits to boost sales.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 14 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="emperor.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Ghost Blogging"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ghost Blogging</h5>
+              <p class="card-text">
+                Providing ghostwriting services for blogs, allowing you to
+                maintain a consistent online presence without the hassle.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 15 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/testimonials/testimonials-3.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Editing and Proofreading"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Editing & Proofreading</h5>
+              <p class="card-text">
+                Offering meticulous editing and proofreading services to ensure
+                your writing is polished and error-free.
+              </p>
+            </div>
+            <div  id="testimonials"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="container mt-5">
+      <h2 class="text-center">What My Clients Are Saying</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <img
+                src="Peter.jpg"
+                alt="Client Photo"
+                class="rounded-circle me-3"
+                style="width: 50px; height: 50px"
+              />
+              <div>
+                <p class="mb-0">John Doe</p>
+                <small class="text-muted">Novelist</small>
+                <div class="star-rating">★★★★★</div>
+              </div>
+            </div>
+            <p>
+              "Adewale delivered beyond my expectations. His work was prompt and
+              of exceptional quality!"
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <img
+                src="testimonials-5.jpg"
+                alt="Client Photo"
+                class="rounded-circle me-3"
+                style="width: 50px; height: 50px"
+              />
+              <div>
+                <p class="mb-0">Jane Smith</p>
+                <small class="text-muted">Content Client</small>
+                <div class="star-rating">★★★★★</div>
+              </div>
+            </div>
+            <p>
+              "Adewale's attention to detail made a significant difference in my
+              project. Highly recommend!"
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <img
+                src="testimonials-4.jpg"
+                alt="Client Photo"
+                class="rounded-circle me-3"
+                style="width: 50px; height: 50px"
+              />
+              <div>
+                <p class="mb-0">Michael Brown</p>
+                <small class="text-muted">E-book Author</small>
+                <div class="star-rating">★★★★★</div>
+              </div>
+            </div>
+            <p>
+              "Working with Adewale was a fantastic experience. He exceeded my
+              expectations!"
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <img
+                src="testimonials-6.jpg"
+                alt="Client Photo"
+                class="rounded-circle me-3"
+                style="width: 50px; height: 50px"
+              />
+              <div>
+                <p class="mb-0">Emily Johnson</p>
+                <small class="text-muted">Blog Owner</small>
+                <div class="star-rating">★★★★★</div>
+              </div>
+            </div>
+            <p>
+              "Adewale's writing style is engaging and relatable. He helped
+              elevate my blog's content!"
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <img
+                src="testimonials-7.jpg"
+                alt="Client Photo"
+                class="rounded-circle me-3"
+                style="width: 50px; height: 50px"
+              />
+              <div>
+                <p class="mb-0">Sarah Wilson</p>
+                <small class="text-muted">Non-Fiction Author</small>
+                <div class="star-rating">★★★★★</div>
+              </div>
+            </div>
+            <p>
+              "Adewale has a knack for storytelling! He brought my ideas to life
+              in a way I never imagined."
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <img
+                src="testimonials-8.jpg"
+                alt="Client Photo"
+                class="rounded-circle me-3"
+                style="width: 50px; height: 50px"
+              />
+              <div>
+                <p class="mb-0">Robert Lee</p>
+                <small class="text-muted">Business Owner</small>
+                <div class="star-rating">★★★★★</div>
+              </div>
+            </div>
+            <p>
+              "Adewale's content strategy helped boost my website traffic
+              significantly. I couldn’t be happier!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact"    class="container mt-5 mb-5">
+      <h2 class="text-center">Get in Touch</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="5"
+            placeholder="Type your message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn" id="appoint">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="container card-social-profile">
+        <figure>
+          <img src="Peter.jpg" class="avatar-profile" alt="avatar-emperor" />
+        </figure>
+
+        <h3>Emperor</h3>
+        <h5 style="color: #f0f0f0;">Oyo state, Nigeria</h5>
+        <p style="color: white">
+          Front-end developer, Ghostwriter and e-commerce Expert
+        </p>
+
+        <div class="card-social-links">
+          <div class="social-card">
+            <a class="social-items" href="https://zeep.ly/jrFgO" target="_blank"
+              >Upwork</a
+            >
+          </div>
+          <div class="social-card">
+            <a class="social-items" href="https://zeep.ly/NeVKK" target="_blank"
+              >Fiverr</a
+            >
+          </div>
+          <div class="social-card">
+            <a class="social-items" href="https://zeep.ly/PfVpN" target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+
+          <div class="social-card">
+            <a
+              class="social-items"
+              href="https://www.instagram.com/ayoolapeteradewale/"
+              target="_blank"
+              >Instagram</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

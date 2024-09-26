@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="rate.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="boxicons/css/boxicons.min.css" />
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .card {
+        background: var(--clr-dark-purple); /* Softer violet to blue gradient */
+        color: #f0f0f0; /* Light gray for softer text contrast */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .card-title {
+        color: #ffffff; /* Bright white for card titles */
+        font-weight: bold;
+      }
+
+      .card-text {
+        color: #f0f0f0; /* Soft gray for card text */
+      }
+    </style>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <div class="container-fluid">
+      <div
+        class="container mt-2 d-flex flex-column flex-md-row justify-content-between"
+        style="color: rgb(44, 73, 100)"
+      >
+        <!-- Contact Info -->
+        <div>
+          <i class="bx bx-envelope">
+            <a
+              href="mailto:adewalep097@gmail.com"
+              class="text-decoration-none"
+              style="font-size: 18px"
+              >adewalep097@gmail.com</a
+            >
+          </i>
+          <i class="bx bx-mobile-alt ms-4"></i> +2348051730626
+        </div>
+
+        <!-- Social Icons -->
+        <div class="d-block d-sm-block d-md-none mt-2">
+          <i class="fab fa-twitter me-3"></i>
+          <i class="fab fa-facebook me-3"></i>
+          <i class="fab fa-instagram me-3"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+
+        <div class="d-none d-md-block">
+          <i class="fab fa-twitter me-3"></i>
+          <i class="fab fa-facebook me-3"></i>
+          <i class="fab fa-instagram me-3"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg mt-2" id="nat">
+      <div class="container">
+        <h2>
+          <a
+            class="navbar-brand text-dark"
+            href="#"
+            style="font-size: 30px; color: rgb(44, 73, 100)"
+            >EmperorHub</a
+          >
+        </h2>
+        <button
+          class="btn btn-primary rounded-pill px-4 order-2 order-lg-3"
+          type="button"
+          id="appoint"
+        >
+          <span class="d-md-inline-block d-none">Make an</span> Appointment
+        </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse me-5" id="collapsibleNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="home.html">Main menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#testimonials"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Framer  Services Section -->
+    <section class="container mt-5 mb-5">
+      <h2 class="display-4 font-weight-bold text-dark text-center">
+        Framer Services
+      </h2>
+      <p class="lead text-muted text-center mb-5">
+        Empowering your Shopify store for maximum visibility and sales success.
+      </p>
+      <div class="row">
+        <!-- Service 1: Store Creation -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="emperor.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Shopify Store Creation"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Store Creation</h5>
+              <p class="card-text">
+                I will set up a professional Shopify store from scratch,
+                tailored to your brand identity.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 2: Product Listing -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="Peter.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Product Listing"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product Listing</h5>
+              <p class="card-text">
+                I will create and manage your product listings to showcase your
+                items effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 3: SEO Optimization -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/doctors/doctors-2.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="SEO Optimization"
+            />
+            <div class="card-body">
+              <h5 class="card-title">SEO Optimization</h5>
+              <p class="card-text">
+                Enhance your product visibility with SEO-friendly tags and
+                compelling descriptions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 4: Digital Marketing -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/doctors/doctors-4.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Digital Marketing"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Digital Marketing</h5>
+              <p class="card-text">
+                I will implement effective marketing strategies to drive traffic
+                to your store.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 5: Virtual Assistant -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/testimonials/testimonials-2.jpg"
+              class="card-img-top"
+              style="width: 50px; height: 50px"
+              alt="Virtual Assistant"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Virtual Assistant</h5>
+              <p class="card-text">
+                Offering ongoing support to help manage your store efficiently.
+              </p>
+              <div id="testimonials"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section  class="container mt-5">
+      <h2>What My Clients Are Saying</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <img
+                src="Peter.jpg"
+                alt="Client Photo"
+                class="rounded-circle me-3"
+                style="width: 50px; height: 50px"
+              />
+              <div>
+                <p class="mb-0">John Doe</p>
+                <small class="text-muted">Framer Client</small>
+                <div class="star-rating">★★★★★</div>
+              </div>
+            </div>
+            <p>
+              Adewale delivered beyond my expectations. He was prompt,
+              professional, and the quality of his work was exceptional!
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <img
+                src="testimonials-5.jpg"
+                alt="Client Photo"
+                class="rounded-circle me-3"
+                style="width: 50px; height: 50px"
+              />
+              <div>
+                <p class="mb-0">Jane Smith</p>
+                <small class="text-muted">E-commerce Client</small>
+                <div class="star-rating">★★★★★</div>
+              </div>
+            </div>
+            <p>
+              Adewale's professionalism and attention to detail made a
+              significant difference in my project. Highly recommended!x
+            </p>
+            
+          </div>
+          
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <img
+                src="testimonials-6.jpg"
+                alt="Client Photo"
+                class="rounded-circle me-3"
+                style="width: 50px; height: 50px"
+              />
+              <div>
+                <p class="mb-0">Mike Johnson</p>
+                <small class="text-muted">Business Owner</small>
+                <div class="star-rating">★★★★★</div>
+              </div>
+            </div>
+            <p>
+              "Fantastic experience! Adewale understood my vision and delivered
+              excellent results. Will definitely work with him again!"
+            </p>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+    </section>
+    <div id="contact"></div>
+
+    <!-- Contact Section -->
+    <section  class="container mt-5 mb-5">
+      <h2 class="display-4 font-weight-bold text-dark text-center">
+        Get in Touch
+      </h2>
+      <p class="lead text-muted text-center mb-5">I'd love to hear from you!</p>
+      <form action="#" method="POST" class="mb-5">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn " id="appoint">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="container card-social-profile">
+        <figure>
+          <img src="Peter.jpg" class="avatar-profile" alt="avatar-emperor" />
+        </figure>
+
+        <h3>Emperor</h3>
+        <h5 style="color: #f0f0f0;">Oyo state, Nigeria</h5>
+        <p style="color: white">
+          Front-end developer, Ghostwriter and e-commerce Expert
+        </p>
+
+        <div class="card-social-links">
+          <div class="social-card">
+            <a class="social-items" href="https://zeep.ly/jrFgO" target="_blank"
+              >Upwork</a
+            >
+          </div>
+          <div class="social-card">
+            <a class="social-items" href="https://zeep.ly/NeVKK" target="_blank"
+              >Fiverr</a
+            >
+          </div>
+          <div class="social-card">
+            <a class="social-items" href="https://zeep.ly/PfVpN" target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+
+          <div class="social-card">
+            <a
+              class="social-items"
+              href="https://www.instagram.com/ayoolapeteradewale/"
+              target="_blank"
+              >Instagram</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
